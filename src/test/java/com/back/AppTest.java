@@ -3,16 +3,17 @@ package com.back;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class AppTest {
 
     @Test
-    @DisplayName("첫번째 테스트")
+    @DisplayName("1과 2를 더하면 3이 나온다.")
     void t1(){
-        System.out.println("테스트1");
-    }
-    @Test
-    @DisplayName("두번째 테스트")
-    void t2(){
-        System.out.println("테스트2");
+
+        App app = new App();
+        int rst = app.plus(1,2);
+
+        assertThat(rst).isEqualTo(3);
     }
 }
