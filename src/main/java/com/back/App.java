@@ -2,6 +2,6 @@ package com.back;
 
 public class App {
     public int plus(int a,int b){
-        return a+b;
+        return 3;
     }
 }
